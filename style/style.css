@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  grid-template-rows: repeat(3, minmax(10px, 1fr));
+  grid-row: span 2;
+  background-color: #051891;
+  color: yellow;
+  .logo {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(150px, 1fr);
+  }
+  ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
