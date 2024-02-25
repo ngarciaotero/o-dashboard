@@ -27,7 +27,7 @@ body {
   }
 }
 
-.nav {
+.nav-container {
   display: grid;
   background-color: yellow;
   .top-nav {
