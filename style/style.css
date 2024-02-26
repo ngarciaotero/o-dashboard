@@ -4,14 +4,12 @@ body {
 
 .dashboard-container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: minmax(min-content, 1fr) 2fr;
 }
 
 .sidebar {
   display: grid;
-  grid-template-columns: minmax(300px, 1fr);
-  grid-template-rows: repeat(3, minmax(10px, 1fr));
+  grid-template-rows: repeat(3, minmax(min-content, 100px));
   grid-row: span 2;
   background-color: #051891;
   color: yellow;
