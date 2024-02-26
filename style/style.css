@@ -30,6 +30,10 @@ body {
 .nav-container {
   display: grid;
   background-color: rgb(249, 249, 108);
+  .bottom-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  }
   .top-nav {
     display: grid;
     grid-template-columns: repeat(5, minmax(min-content, 1fr));
