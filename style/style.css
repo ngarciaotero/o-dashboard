@@ -4,7 +4,7 @@ body {
 
 .dashboard-container {
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr) 2fr;
+  grid-template-columns: minmax(min-content, 1fr) 4fr;
 }
 
 .sidebar {
@@ -15,13 +15,13 @@ body {
   color: yellow;
   .logo {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) minmax(150px, 1fr);
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
   }
   .main-menu ul,
   .support-menu ul {
     display: grid;
     list-style-type: none;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
     gap: 15px;
     padding: 0;
   }
@@ -32,7 +32,7 @@ body {
   background-color: rgb(249, 249, 108);
   .top-nav {
     display: grid;
-    grid-template-columns: repeat(5, minmax(215px, 1fr));
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
   }
   .bottom-nav {
     display: grid;
