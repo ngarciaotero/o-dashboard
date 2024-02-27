@@ -131,22 +131,25 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: minmax(min-content, 2fr) 1fr;
+  grid-template-columns: minmax(min-content, 3fr) 1fr;
   grid-template-rows: repeat(2, minmax(min-content, 1fr));
-  gap: 20px;
+  column-gap: 20px;
   box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.257);
   background-color: var(--custom-gray);
-  padding: 20px;
+  padding: 30px;
   .project-container {
     grid-row: span 2;
     .projects-content {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 40px;
       div {
-        border-radius: 10px;
-        background-color: var(--custom-white);
-        border-left: 10px solid var(--custom-yellow);
+        place-items: end end;
+      }
+      div > div {
+        display: grid;
+        margin-top: 71px;
+        grid-template-columns: 5fr 1fr 1fr;
       }
     }
   }
@@ -165,49 +168,38 @@ body {
     grid-template-columns: minmax(min-content, 1fr);
     .trending-content {
       display: grid;
-      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      grid-template-columns: minmax(min-content, 1fr) 4fr;
       grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
       background-color: var(--custom-white);
+      align-items: center;
       border-radius: 10px;
+      padding: 20px;
+      row-gap: 30px;
     }
   }
 }
 
-.main-menu ul object,
-.support-menu ul object {
-  filter: invert(99%) sepia(26%) saturate(6113%) hue-rotate(315deg)
-    brightness(89%) contrast(104%);
+.trending-content {
+  img {
+    width: 50px;
+  }
+  div h5,
+  div p {
+    margin: 0;
+  }
+}
+
+.projects-content > div {
+  border-radius: 10px;
+  background-color: var(--custom-white);
+  border-left: 10px solid var(--custom-yellow);
+  padding: 25px;
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+.project-icons {
   width: 30px;
-}
-
-.star-logo {
-  width: 100px;
-}
-
-.nav-container .top-nav div {
-  object,
-  img {
-    width: 2em;
-  }
-  input {
-    background-color: var(--custom-gray);
-    border-radius: 20px;
-    border: 1px solid var(--custom-gray);
-    height: 2rem;
-  }
-}
-
-.nav-container .bottom-nav {
-  img {
-    width: 5rem;
-  }
-}
-
-.nav-buttons button {
-  border-radius: 20px;
-  background-color: var(--custom-blue);
-  color: var(--custom-white);
-  padding: 9px 2em 9px 2em;
-  border: 1px solid var(--custom-blue);
-  font-weight: 600;
 }
