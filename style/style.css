@@ -39,6 +39,10 @@ body {
     align-items: center;
     row-gap: 15px;
     font-weight: 500;
+    font-size: 25px;
+  }
+  .support-menu ul {
+    padding-top: 40px;
   }
 }
 
@@ -46,7 +50,7 @@ body {
 .support-menu ul object {
   filter: invert(99%) sepia(26%) saturate(6113%) hue-rotate(315deg)
     brightness(89%) contrast(104%);
-  width: 30px;
+  width: 40px;
 }
 
 .star-logo {
