@@ -45,13 +45,40 @@ body {
 .nav-container {
   display: grid;
   background-color: var(--custom-white);
+  padding: 20px;
   .top-nav {
     display: grid;
-    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 1fr);
+    gap: 50px;
+    margin-bottom: 20px;
+    .top-right-nav {
+      display: grid;
+      grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(
+          min-content,
+          5fr
+        );
+      align-items: center;
+      h4 {
+        margin: 0;
+      }
+    }
+    .top-left-nav {
+      display: grid;
+      grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 11fr);
+      align-items: center;
+    }
   }
   .bottom-nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: minmax(min-content, 1fr) 3fr 3fr;
+    place-items: center;
+    .nav-greeting {
+      justify-self: start;
+      h4,
+      h3 {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -102,4 +129,32 @@ body {
 
 .star-logo {
   width: 100px;
+}
+
+.nav-container .top-nav div {
+  object,
+  img {
+    width: 2em;
+  }
+  input {
+    background-color: var(--custom-gray);
+    border-radius: 20px;
+    border: 1px solid var(--custom-gray);
+    height: 2rem;
+  }
+}
+
+.nav-container .bottom-nav {
+  img {
+    width: 5rem;
+  }
+}
+
+.nav-buttons button {
+  border-radius: 20px;
+  background-color: var(--custom-blue);
+  color: var(--custom-white);
+  padding: 9px 2em 9px 2em;
+  border: 1px solid var(--custom-blue);
+  font-weight: 600;
 }
