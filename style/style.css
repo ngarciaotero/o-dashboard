@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
 :root {
   --custom-gray: rgb(227, 232, 239);
   --custom-white: rgb(255, 255, 255);
@@ -12,6 +14,7 @@ body {
 .dashboard-container {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) 4fr;
+  font-family: "Fredoka", sans-serif;
 }
 
 .sidebar {
