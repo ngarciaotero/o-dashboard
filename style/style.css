@@ -64,14 +64,14 @@ body {
   padding: 20px;
   .top-nav {
     display: grid;
-    grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 1fr);
+    grid-template-columns: minmax(min-content, 3fr) minmax(min-content, 1fr);
     gap: 50px;
     margin-bottom: 20px;
     .top-right-nav {
       display: grid;
       grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(
           min-content,
-          5fr
+          4fr
         );
       align-items: center;
       h4 {
