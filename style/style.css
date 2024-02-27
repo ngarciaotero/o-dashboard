@@ -11,8 +11,8 @@ body {
   display: grid;
   grid-template-rows: repeat(3, minmax(min-content, 100px));
   grid-row: span 2;
-  background-color: #2340f9;
-  color: yellow;
+  background-color: #1c94d4;
+  color: white;
   .logo {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
