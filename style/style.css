@@ -16,7 +16,7 @@ body {
   grid-template-columns: minmax(min-content, 1fr) 4fr;
   font-family: "Fredoka", sans-serif;
 }
-
+/* ---------------------------------- Sidebar Container ----------------------------------*/
 .sidebar {
   display: grid;
   grid-template-rows: repeat(3, minmax(min-content, 100px));
@@ -41,6 +41,18 @@ body {
     font-weight: 500;
   }
 }
+
+.main-menu ul object,
+.support-menu ul object {
+  filter: invert(99%) sepia(26%) saturate(6113%) hue-rotate(315deg)
+    brightness(89%) contrast(104%);
+  width: 30px;
+}
+
+.star-logo {
+  width: 100px;
+}
+/* ---------------------------------- Nav Container ----------------------------------*/
 
 .nav-container {
   display: grid;
@@ -81,6 +93,36 @@ body {
     }
   }
 }
+
+.nav-container .top-nav div {
+  object,
+  img {
+    width: 2em;
+  }
+  input {
+    background-color: var(--custom-gray);
+    border-radius: 20px;
+    border: 1px solid var(--custom-gray);
+    height: 2rem;
+  }
+}
+
+.nav-container .bottom-nav {
+  img {
+    width: 5rem;
+  }
+}
+
+.nav-buttons button {
+  border-radius: 20px;
+  background-color: var(--custom-blue);
+  color: var(--custom-white);
+  padding: 9px 2em 9px 2em;
+  border: 1px solid var(--custom-blue);
+  font-weight: 600;
+}
+
+/* ---------------------------------- Content Container ----------------------------------*/
 
 .content {
   display: grid;
