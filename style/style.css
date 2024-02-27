@@ -92,3 +92,14 @@ body {
     }
   }
 }
+
+.main-menu ul object,
+.support-menu ul object {
+  filter: invert(99%) sepia(26%) saturate(6113%) hue-rotate(315deg)
+    brightness(89%) contrast(104%);
+  width: 30px;
+}
+
+.star-logo {
+  width: 100px;
+}
