@@ -124,6 +124,7 @@ body {
   padding: 9px 2em 9px 2em;
   border: 1px solid var(--custom-blue);
   font-weight: 600;
+  margin: 15px;
 }
 
 /* ---------------------------------- Content Container ----------------------------------*/
