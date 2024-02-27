@@ -89,6 +89,7 @@ body {
   gap: 20px;
   box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.257);
   background-color: var(--custom-gray);
+  padding: 20px;
   .project-container {
     grid-row: span 2;
     .projects-content {
